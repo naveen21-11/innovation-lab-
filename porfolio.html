@@ -1,140 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+#main {
+  margin-left: 0;
+  padding-top: 60px;
+}
+.w3-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+</style>
+<body class="w3-black">
+<!--section-->
+<!-- Top landscape navbar -->
+<!-- Top landscape navbar with centered items -->
+<div class="w3-bar w3-black w3-large" style="display: flex; justify-content: center;">
+  <a href="#" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#photos" class="w3-bar-item w3-button">PHOTOS</a>
+  <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+</div>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Basic Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background: #f9f9f9;
-            color: #333;
-        }
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
 
-        h1,
-        h2 {
-            color: #2c3e50;
-        }
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me... [keep original content here]</p>
 
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:95%"></div></div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:85%"></div></div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:80%"></div></div><br>
 
-        section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+    <!-- Stats -->
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section"><span class="w3-xlarge">11+</span><br>Partners</div>
+      <div class="w3-quarter w3-section"><span class="w3-xlarge">55+</span><br>Projects Done</div>
+      <div class="w3-quarter w3-section"><span class="w3-xlarge">89+</span><br>Happy Clients</div>
+      <div class="w3-quarter w3-section"><span class="w3-xlarge">150+</span><br>Meetings</div>
+    </div>
 
-        ul {
-            list-style: disc inside;
-            padding-left: 0;
-        }
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
 
-        .contact-info a {
-            margin: 0 10px;
-        }
+    <!-- Pricing Tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16"><h2>$10</h2><span class="w3-opacity">per month</span></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
 
-        /* Contact Form Styles */
-        form {
-            max-width: 100%;
-        }
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16"><h2>$25</h2><span class="w3-opacity">per month</span></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        form label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 6px;
-            color: #2c3e50;
-        }
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>John Doe saved us from a web disaster.</p><br>
 
-        form input[type="text"],
-        form input[type="email"],
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1rem;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p>
+  </div>
 
-        form input[type="text"]:focus,
-        form input[type="email"]:focus,
-        form textarea:focus {
-            border-color: #2980b9;
-            outline: none;
-        }
+  <!-- Photo Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
 
-        form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        form button {
-            background-color: #2980b9;
-            color: white;
-            padding: 12px 24px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        form button:hover {
-            background-color: #1c5980;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="Home">home</a></li>
-                <li><a href="About">about</a></li>
-                <li><a href="Skills">skills</a></li>
-                <li><a href="Project">project</a></li>
-                <li><a href="Contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Naveen</h1>
-            <p>Web Developer</p>
-            <p class="contact-info">
-                <a href="#">Download Resume</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>About Me</h2>
-            <p>Passionate web developer with 3 years of experience creating responsive and user-friendly websites.
-                Skilled in JavaScript, React, and UI design.</p>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>JavaScript, React, HTML5, CSS3</li>
-                <li>Git, Agile methodologies</li>
-                <li>UI/UX design basics</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Proje
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16"
